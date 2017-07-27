@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="demo@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="demo">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="demodb"/>
+    <schema id="4" parent="1" name="gtasecp"/>
+    <schema id="5" parent="1" name="hibernate"/>
+    <schema id="6" parent="1" name="hibernatedemo"/>
+    <schema id="7" parent="1" name="ibase4j"/>
+    <schema id="8" parent="1" name="information_schema"/>
+    <schema id="9" parent="1" name="jeesite"/>
+    <schema id="10" parent="1" name="jfinal_demo"/>
+    <schema id="11" parent="1" name="msn"/>
+    <schema id="12" parent="1" name="mybatis"/>
+    <schema id="13" parent="1" name="mysql"/>
+    <schema id="14" parent="1" name="paging"/>
+    <schema id="15" parent="1" name="pddemo"/>
+    <schema id="16" parent="1" name="performance_schema"/>
+    <schema id="17" parent="1" name="seckill"/>
+    <schema id="18" parent="1" name="shiro"/>
+    <schema id="19" parent="1" name="shirodemo"/>
+    <schema id="20" parent="1" name="student"/>
+    <schema id="21" parent="1" name="systema"/>
+    <schema id="22" parent="1" name="test"/>
+    <schema id="23" parent="1" name="test2"/>
+    <schema id="24" parent="1" name="test3"/>
+    <schema id="25" parent="1" name="trainingdemo"/>
+    <table id="26" parent="2" name="account"/>
+    <table id="27" parent="2" name="employee"/>
+    <table id="28" parent="2" name="forexmanage">
+      <Comment>外汇管理表</Comment>
+    </table>
+    <table id="29" parent="2" name="institution"/>
+    <table id="30" parent="2" name="news"/>
+    <table id="31" parent="2" name="person"/>
+    <table id="32" parent="2" name="rex_test"/>
+    <table id="33" parent="2" name="sex"/>
+    <table id="34" parent="2" name="statement"/>
+    <table id="35" parent="2" name="student"/>
+    <table id="36" parent="2" name="students"/>
+    <table id="37" parent="2" name="t_user"/>
+    <table id="38" parent="2" name="user"/>
+    <table id="39" parent="2" name="workers_info"/>
+    <column id="40" parent="26" name="name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="26" name="password">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="26" name="address">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="26" name="order_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="26" name="order_id1">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="45" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="27" name="empId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="27" name="empName">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="27" name="sex">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="27" name="dept">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="50" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>empId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="51" parent="28" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="28" name="trx_sub">
+      <Position>2</Position>
+      <Comment>交易主体</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="53" parent="28" name="vch_typ">
+      <Position>3</Position>
+      <Comment>证件类型</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="54" parent="28" name="vch_num">
+      <Position>4</Position>
+      <Comment>证件号码</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="55" parent="28" name="dst_cty">
+      <Position>5</Position>
+      <Comment>前往国家</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="56" parent="28" name="fox_cur">
+      <Position>6</Position>
+      <Comment>购/结汇币种</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="57" parent="28" name="fox_amt">
+      <Position>7</Position>
+      <Comment>购/结汇金额</Comment>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="58" parent="28" name="tra_dol">
+      <Position>8</Position>
+      <Comment>折算成美元金额</Comment>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="59" parent="28" name="trx_sts">
+      <Position>9</Position>
+      <Comment>货币形态（01取现，02存入账户）</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="60" parent="28" name="fox_pro">
+      <Position>10</Position>
+      <Comment>购/结汇资金属性</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="61" parent="28" name="fox_abs">
+      <Position>11</Position>
+      <Comment>摘要</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="62" parent="28" name="ref_num">
+      <Position>12</Position>
+      <Comment>业务参单号</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="63" parent="28" name="fox_typ">
+      <Position>13</Position>
+      <Comment>外汇交易类型（1购汇，2结汇）</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="64" parent="28" name="out_act">
+      <Position>14</Position>
+      <Comment>转出方账/卡号</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="65" parent="28" name="out_psd">
+      <Position>15</Position>
+      <Comment>转出方密码</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="66" parent="28" name="ech_rat">
+      <Position>16</Position>
+      <Comment>汇率</Comment>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="67" parent="28" name="is_rvc">
+      <Position>17</Position>
+      <Comment>是否已撤销（0未撤销，1已撤销）</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="68" parent="28" name="mag_tim">
+      <Position>18</Position>
+      <Comment>管理局操作时间</Comment>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="69" parent="28" name="per_tim">
+      <Position>19</Position>
+      <Comment>个人外币结/售汇操作时间</Comment>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+    </column>
+    <key id="70" parent="28" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="71" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="72" parent="29" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="29" name="institutionId">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="74" parent="29" name="institutionId">
+      <ColNames>institutionId</ColNames>
+    </index>
+    <key id="75" parent="29" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="76" parent="29" name="institution_ibfk_1">
+      <ColNames>institutionId</ColNames>
+      <RefSchemaName>demo</RefSchemaName>
+      <RefTableName>institution</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="77" parent="30" name="newstitle">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="30" name="newscontent">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="79" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="80" parent="31" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="31" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="31" name="sex">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="31" name="age">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="84" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="85" parent="32" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="32" name="NAME">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="32" name="CREATE_TIME">
+      <Position>3</Position>
+      <DataType>time|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="33" name="order_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="89" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>order_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="90" parent="34" name="statement_cde">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="91" parent="34" name="parent_cde">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="92" parent="34" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="93" parent="34" name="lvl">
+      <Position>4</Position>
+      <DataType>int(1)|0</DataType>
+    </column>
+    <column id="94" parent="34" name="type">
+      <Position>5</Position>
+      <DataType>int(1)|0</DataType>
+    </column>
+    <column id="95" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="96" parent="35" name="name">
+      <Position>2</Position>
+      <DataType>varchar(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="35" name="birthday">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="98" parent="35" name="gender">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="99" parent="35" name="age">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="100" parent="35" name="address">
+      <Position>6</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <key id="101" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="102" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="103" parent="36" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="104" parent="36" name="sex">
+      <Position>3</Position>
+      <DataType>varchar(2)|0</DataType>
+    </column>
+    <column id="105" parent="36" name="c_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="106" parent="36" name="age">
+      <Position>5</Position>
+      <DataType>int(3)|0</DataType>
+    </column>
+    <column id="107" parent="36" name="pic">
+      <Position>6</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="108" parent="36" name="islogin">
+      <Position>7</Position>
+      <DataType>int(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="109" parent="36" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="110" parent="37" name="USER_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="111" parent="37" name="USER_NAME">
+      <Position>2</Position>
+      <DataType>char(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="112" parent="37" name="USER_PASSWORD">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="113" parent="37" name="IDX_NAME">
+      <ColNames>USER_NAME</ColNames>
+    </index>
+    <key id="114" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="115" parent="38" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="116" parent="38" name="USERNAME">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="117" parent="38" name="PASSWORD">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="118" parent="38" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="119" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="120" parent="39" name="workername">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="121" parent="39" name="salary">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="122" parent="39" name="email">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="123" parent="39" name="EmployedDates">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="124" parent="39" name="department">
+      <Position>6</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <key id="125" parent="39" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
