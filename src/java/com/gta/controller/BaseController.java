@@ -20,11 +20,11 @@ public abstract class BaseController {
     @InitBinder
     public void initBinder(WebDataBinder binder){
 
+        //字符裁剪空格
         binder.registerCustomEditor(String.class, new StringTrimmerEditor(" \t\r\n\f", true));
 
-
+        //日期格式化
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-
         binder.registerCustomEditor(Date.class, new CustomDateEditor(df, true));
 
     }
