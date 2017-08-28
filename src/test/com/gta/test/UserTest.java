@@ -31,7 +31,9 @@ public class UserTest extends BaseTest {
     @Test
     public void testGetUserById() {
         logger.info("testGetUserById method execute");
-        System.out.println(userService.getUserById(2));
+        System.out.println("=======================================");
+        System.out.println(userService.getUserById(2).getPassWord());
+        System.out.println("=======================================");
     }
 
 }

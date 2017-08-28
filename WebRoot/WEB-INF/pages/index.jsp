@@ -36,7 +36,7 @@
     <br>
     <a href="${pageContext.request.contextPath}/loginOut">退出</a>
     <br>
-    <input type="text" id="text1" onkeyup="keyUp(this);" title="请输入内容">
+    <input type="text" onkeyup="keyUp(this);" title="请输入内容">
     <script type="text/javascript"  >
         function keyUp(obj) {
             var c=$(obj);

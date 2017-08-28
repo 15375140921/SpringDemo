@@ -1,7 +1,6 @@
 package com.gta.service;
 
 import com.gta.model.User;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 

@@ -8,10 +8,10 @@
     </select>
 
     <select id="listUser" resultType="com.gta.model.User">
-        SELECT u.USERNAME, u.USERNAME FROM USER u
+        SELECT u.USERNAME, u.PASSWORD FROM USER u
     </select>
     <select id="getUserById" resultType="com.gta.model.User" parameterType="int">
-        SELECT u.USERNAME, u.USERNAME FROM USER u WHERE u.ID = #{id}
+        SELECT u.USERNAME, u.PASSWORD FROM USER u WHERE u.ID = #{id}
     </select>
 
     <select id="getUserByName" resultType="com.gta.model.User" parameterType="string">

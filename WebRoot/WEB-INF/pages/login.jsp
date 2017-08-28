@@ -41,7 +41,6 @@
     <script type="text/javascript">
     $(function () {
         $("#submitButton").click(function () {
-            debugger;
             $("form").submit();
         });
 

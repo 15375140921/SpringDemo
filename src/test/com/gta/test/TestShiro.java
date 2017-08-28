@@ -12,8 +12,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * TestShiro
- * Created by ningning.jiang on 2017/7/5.
+ * TestShiro 功能： Shiro测试类
+ * Created by ningning.jiang on 2017-08-14 14:20:17
  */
 public class TestShiro {
 

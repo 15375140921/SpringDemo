@@ -64,7 +64,7 @@
         <property name="basePackage" value="com.gta.dao"/>
     </bean>
 
-    <!--事物管理器-->
+    <!--事务管理器-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
@@ -151,10 +151,10 @@
                 /login=anon
                 /resource/**=anon
                 <!--authc授权后可以访问的-->
-                <!--/teaManage**=authc,roles[teaManage],perms[tea:manage]
+                /teaManage**=authc,roles[teaManage],perms[tea:manage]
                 /tea**=authc,roles[tea]
                 /admin**=authc,perms[admin:manage]
-                /stu**=authc,roles[stu]-->
+                /stu**=authc,roles[stu]
                 /**=user
             </value>
         </property>

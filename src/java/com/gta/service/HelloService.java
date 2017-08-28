@@ -1,8 +1,8 @@
 package com.gta.service;
 
 /**
- * HelloService接口
- * Created by ningning.jiang on 2017/6/23.
+ * HelloService 功能： HelloService接口
+ * Created by ningning.jiang on 2017-08-14 13:37:42
  */
 public interface HelloService {
 

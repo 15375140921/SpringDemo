@@ -12,8 +12,8 @@ import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- *
- * Created by ningning.jiang on 2017/7/4.
+ * MyRealm 功能： 自定义realm
+ * created by ningning.jiang 2017-08-14 10:53:47
  */
 public class MyRealm extends AuthorizingRealm {
 

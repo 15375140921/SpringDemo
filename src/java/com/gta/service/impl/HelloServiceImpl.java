@@ -4,8 +4,8 @@ import com.gta.service.HelloService;
 import org.springframework.stereotype.Service;
 
 /**
- * HelloServiceImpl
- * Created by ningning.jiang on 2017/6/23.
+ * HelloServiceImpl 功能： HelloService实现类
+ * created by ningning.jiang 2017-08-14 13:36:43
  */
 @Service
 public class HelloServiceImpl implements HelloService {

@@ -14,7 +14,7 @@ import java.io.Serializable;
  */
 public class RedisUtilTest extends BaseTest {
 
-    Logger logger = Logger.getLogger(RedisUtilTest.class);
+    private Logger logger = Logger.getLogger(RedisUtilTest.class);
 
     @Resource
     private RedisTemplate<Serializable, Object> redisTemplate;
