@@ -30,6 +30,8 @@
     <br>
     <a href="${pageContext.request.contextPath}/tea">tea可以访问的页面</a>
     <br>
+    <a href="${pageContext.request.contextPath}/teacher">teacher可以访问的页面</a>
+    <br>
     <a href="${pageContext.request.contextPath}/stu">stu可以访问的页面</a>
     <br>
     <a href="${pageContext.request.contextPath}/notice">公告</a>

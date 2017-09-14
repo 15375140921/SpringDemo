@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpSession;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * LoginController
@@ -19,10 +21,13 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class LoginController {
 
-    Logger logger = Logger.getLogger(LoginController.class);
+    private Logger logger = Logger.getLogger(LoginController.class);
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String login() {
+    public String login(Model model) {
+        List<String> list = Arrays.asList("AAA", "BBB", "CCC");
+        model.addAttribute("list", list);
+        model.addAttribute("str", "Hello FreeMarker");
         return "login";
     }
 

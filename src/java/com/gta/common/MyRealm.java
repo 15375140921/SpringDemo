@@ -1,15 +1,15 @@
 package com.gta.common;
 
-import com.gta.model.User;
-import com.gta.service.UserService;
-import org.apache.log4j.Logger;
-import org.apache.shiro.authc.*;
-import org.apache.shiro.authz.AuthorizationInfo;
-import org.apache.shiro.authz.SimpleAuthorizationInfo;
-import org.apache.shiro.realm.AuthorizingRealm;
-import org.apache.shiro.subject.PrincipalCollection;
-import org.apache.shiro.util.ByteSource;
-import org.springframework.beans.factory.annotation.Autowired;
+        import com.gta.model.User;
+        import com.gta.service.UserService;
+        import org.apache.log4j.Logger;
+        import org.apache.shiro.authc.*;
+        import org.apache.shiro.authz.AuthorizationInfo;
+        import org.apache.shiro.authz.SimpleAuthorizationInfo;
+        import org.apache.shiro.realm.AuthorizingRealm;
+        import org.apache.shiro.subject.PrincipalCollection;
+        import org.apache.shiro.util.ByteSource;
+        import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * MyRealm 功能： 自定义realm
@@ -52,6 +52,7 @@ public class MyRealm extends AuthorizingRealm {
         }
         if (userName != null && "tea".equals(userName)){
             info.addRole("tea");
+            info.addStringPermission("tea:update");
             return info;
         }
         if (userName != null && "stu".equals(userName)){

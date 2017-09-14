@@ -20,10 +20,23 @@
     <mvc:resources mapping="/resource/**" location="/resource/"/>
 
     <!--配置jsp显示ViewResolver-->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           id="internalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
+    </bean>-->
+
+    <!-- 针对freemarker的视图配置 -->
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="cache" value="true" />
+        <property name="prefix" value="" />
+        <property name="suffix" value=".ftl" />
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+        <property name="requestContextAttribute" value="request" />
+        <property name="exposeSpringMacroHelpers" value="true" />
+        <property name="exposeRequestAttributes" value="true" />
+        <property name="exposeSessionAttributes" value="true" />
     </bean>
 
 </beans>

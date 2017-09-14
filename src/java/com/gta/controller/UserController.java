@@ -34,4 +34,7 @@ public class UserController {
     public String notice(){
         return "notice";
     }
+
+    @RequestMapping("/teacher")
+    public String teacher(){return "tea";}
 }

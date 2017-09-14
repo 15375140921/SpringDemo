@@ -5,6 +5,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -17,6 +19,7 @@ public class RedisUtil {
     private static Logger logger = Logger.getLogger(RedisUtil.class);
 
     private static RedisTemplate<Serializable, Object> redisTemplate;
+
 
     /**
      * 写入或更新缓存
@@ -33,7 +36,7 @@ public class RedisUtil {
             operations.set(key, value);
             result = true;
         } catch (Exception e) {
-            logger.error("write redis is faill");
+            logger.error("write redis is fail");
             e.printStackTrace();
 
         }
@@ -120,8 +123,7 @@ public class RedisUtil {
         return redisTemplate.hasKey(key);
     }
 
-    public void setRedisTemplate(
-            RedisTemplate<Serializable, Object> redisTemplate) {
+    public void setRedisTemplate(RedisTemplate<Serializable, Object> redisTemplate) {
         this.redisTemplate = redisTemplate;
     }
 }
