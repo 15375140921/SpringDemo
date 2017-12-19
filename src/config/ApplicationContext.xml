@@ -69,7 +69,7 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
     <!--使用注解事物-->
-    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <tx:annotation-driven/>
 
     <!--redis-->
     <!--jedis配置-->
@@ -115,7 +115,7 @@
         <!-- <property name="sessionMode" value="native"/> -->
     </bean>
 
-    <!-- 继承自AuthorizingRealm的自定义Realm,即指定Shiro验证用户登录的类为自定义的ShiroDbRealm.java -->
+    <!-- 继承自AuthorizingRealm的自定义Realm,即指定Shiro验证用户登录的类为自定义的MyRealm.java -->
     <bean id="realm" class="com.gta.common.MyRealm"/>
     <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
         <property name="cacheManagerConfigFile" value="classpath:ehcache.xml"/>

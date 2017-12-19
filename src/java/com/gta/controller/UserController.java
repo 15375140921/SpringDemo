@@ -11,30 +11,32 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UserController {
 
     @RequestMapping("/admin")
-    public String admin(){
+    public String admin() {
         return "admin";
     }
 
     @RequestMapping("/teaManage")
-    public String teaManage(){
+    public String teaManage() {
         return "teaManage";
     }
 
     @RequestMapping("/tea")
-    public String tea(){
+    public String tea() {
         return "tea";
     }
 
     @RequestMapping("/stu")
-    public String stu(){
+    public String stu() {
         return "stu";
     }
 
     @RequestMapping("/notice")
-    public String notice(){
+    public String notice() {
         return "notice";
     }
 
     @RequestMapping("/teacher")
-    public String teacher(){return "tea";}
+    public String teacher() {
+        return "tea";
+    }
 }

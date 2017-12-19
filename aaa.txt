@@ -3,3 +3,6 @@ Creating a new branch is quick and simple.
 Yes, it is.
 
 YES!
+
+
+参考：http://jadyer.cn/2013/09/30/springmvc-shiro/

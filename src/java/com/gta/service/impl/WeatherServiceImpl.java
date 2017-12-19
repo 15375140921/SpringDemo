@@ -20,11 +20,11 @@ public class WeatherServiceImpl implements WeatherService{
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String WEATHER_API = "http://www.sojson.com/open/api/weather/json.shtml";
+    private static final String WEATHER_API = "http://www.sojson.com/open/api/weather/json.shtml?city=";
 
     @Override
     public WeatherResponse getDataByCityName(String cityName) {
-        String uri = WEATHER_API + "?city=" + cityName;
+        String uri = WEATHER_API + cityName;
         HttpEntity entity = restTemplate.getForEntity(uri, String.class);
         JSONObject jsonObject = JSONObject.fromObject(entity.getBody().toString());
         System.out.println(jsonObject);
